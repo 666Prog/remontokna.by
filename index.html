@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>РЕМОНТ ОКОН — remontokna.by</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="logo.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="logo">
+          <img src="logo.png" alt="Логотип РЕМОНТ ОКОН" class="logo__icon" />
+          <span class="logo__text">РЕМОНТ ОКОН</span>
+        </div>
+        <nav class="nav">
+          <a href="#hero" class="nav__link">Главная</a>
+          <a href="#services" class="nav__link">Наши услуги</a>
+          <a href="#benefits" class="nav__link">Преимущества</a>
+          <a href="#testimonials" class="nav__link">Отзывы</a>
+          <a href="#contact" class="nav__link nav__cta">Вызвать мастера</a>
+        </nav>
+        <button class="burger" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="hero__tag">Ремонт окон ПВХ, дерева, алюминия</p>
+            <h1 class="hero__title">
+              Нужен ремонт окон?
+            </h1>
+            <p class="hero__subtitle hero__question">
+              Выполним ремонт окон и дверей любой сложности. Работаем
+              <strong>аккуратно</strong>, в <strong>назначенное время</strong> и
+              с <strong>гарантией</strong> на выполненные работы.
+            </p>
+            <div class="hero__phones">
+              <span class="hero__phones-label">
+                <strong>Контакты:</strong>
+              </span>
+              <div class="hero__phones-list">
+                <span class="hero__phone">
+                  <a class="phone-link" href="tel:+375447408010">
+                    <strong>+375 (44) 740‑80‑10</strong>
+                  </a>
+                </span>
+                <span class="hero__phone">
+                  <a class="phone-link" href="tel:+375447407010">
+                    <strong>+375 (44) 740‑70‑10</strong>
+                  </a>
+                </span>
+                <span class="hero__phone">
+                  <a class="phone-link" href="tel:+375257406010">
+                    <strong>+375 (25) 740‑60‑10</strong>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <p class="hero__subtitle hero__location">
+              Ремонт окон в <strong>Жодино</strong>, <strong>Смолевичах</strong>,
+              а также по <strong>Жодинскому</strong> и <strong>Смолевичскому</strong>
+              районам.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Вызвать специалиста</a>
+              <a href="#services" class="btn btn--ghost">Наши услуги</a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <div class="hero__image-placeholder">
+              <img
+                src="hero-photo.png"
+                alt="Мастер выполняет ремонт окна"
+                class="section-photo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section section--light">
+        <div class="container">
+          <h2 class="section__title section__title--center">
+            Услуги по ремонту окон
+          </h2>
+          <div class="section__divider"></div>
+          <p class="section__subtitle">
+            Ремонт окон и дверей любой сложности: от мелкой регулировки до
+            серьёзной замены элементов. Ниже — основные направления работ, с
+            которыми мы помогаем клиентам.
+          </p>
+          <div class="services-layout">
+            <div class="services-layout__left">
+              <ul class="services-list">
+                <li class="services-list__item">
+                  <span class="services-list__icon"></span>
+                  <div class="services-list__text">
+                    <span>Замена фурнитуры</span>
+                    <span class="services-list__note">(ПВХ, дерево, алюминий)</span>
+                  </div>
+                </li>
+                <li class="services-list__item">
+                  <span class="services-list__icon"></span>
+                  <div class="services-list__text">
+                    <span>Замена стеклопакетов</span>
+                    <span class="services-list__note">(ПВХ, дерево, алюминий)</span>
+                  </div>
+                </li>
+                <li class="services-list__item">
+                  <span class="services-list__icon"></span>
+                  <div class="services-list__text">
+                    <span>Замена уплотнительной резинки</span>
+                  </div>
+                </li>
+                <li class="services-list__item">
+                  <span class="services-list__icon"></span>
+                  <div class="services-list__text">
+                    <span>Замена ручек</span>
+                  </div>
+                </li>
+                <li class="services-list__item">
+                  <span class="services-list__icon"></span>
+                  <div class="services-list__text">
+                    <span>Замена доводчиков</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="services-layout__right">
+              <div class="services-layout__image">
+                <img
+                  src="services-photo.png"
+                  alt="Мастер выполняет ремонт оконного блока"
+                  class="section-photo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="maintenance" class="section">
+        <div class="container">
+          <div class="split">
+            <div class="split__row">
+              <div class="split__image">
+                <img
+                  src="replacement-photo.png"
+                  alt="Сервисное обслуживание окон на объекте"
+                  class="section-photo"
+                />
+              </div>
+              <div class="split__content">
+                <h2 class="section__title section__title--center">
+                  Сервисное обслуживание окон
+                </h2>
+                <div class="section__divider"></div>
+                <p class="section__subtitle">
+                  Сервисное обслуживание окон позволяет надолго забыть о
+                  проблемах, связанных с Вашими окнами. Мы заключаем договоры на
+                  обслуживание на постоянной основе со строительными
+                  организациями и объектами общественного назначения:
+                  офисами, школами, детскими садами и жилыми комплексами.
+                </p>
+              </div>
+            </div>
+            <div class="split__row split__row--reverse">
+              <div class="split__image">
+                <img
+                  src="maintenance-photo.png"
+                  alt="Замена фурнитуры и стеклопакетов"
+                  class="section-photo"
+                />
+              </div>
+              <div class="split__content">
+                <h2
+                  class="section__title section__title--long section__title--center"
+                >
+                  Замена фурнитуры и стеклопакетов
+                </h2>
+                <div class="section__divider"></div>
+                <p class="section__subtitle">
+                  Замена фурнитуры и стеклопакетов необходима тогда, когда при
+                  нарушении в работе или поломке обычный ремонт уже невозможен,
+                  либо когда требуется улучшить характеристики окна. Так как
+                  фурнитура и стеклопакеты разных производителей, как правило,
+                  совместимы по стандартам, мы подбираем оптимальный вариант
+                  без лишних переделок, сохраняя внешний вид и повышая комфорт
+                  и энергоэффективность.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="section section--light">
+        <div class="container">
+          <h2 class="section__title section__title--center">
+            Ощутите преимущества работы с профессионалами
+          </h2>
+          <div class="section__divider"></div>
+          <div class="benefits-icons">
+            <div class="benefit">
+              <div class="benefit__icon">BYN</div>
+              <h3 class="benefit__title">Цены для всех</h3>
+              <p class="benefit__text">
+                Вы можете позволить себе работу профессионалов, ведь мы
+                предлагаем варианты под любой бюджет.
+              </p>
+            </div>
+            <div class="benefit">
+              <div class="benefit__icon">✓</div>
+              <h3 class="benefit__title">Гарантии</h3>
+              <p class="benefit__text">
+                Мы работаем строго по договору, и вы получаете гарантию на все
+                работы до 3‑х лет.
+              </p>
+            </div>
+            <div class="benefit">
+              <div class="benefit__icon">A→Я</div>
+              <h3 class="benefit__title">От А до Я</h3>
+              <p class="benefit__text">
+                Проведем для вас все работы: от составления проекта до
+                установки светильников любых конструкций.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="container testimonials">
+          <h2 class="section__title section__title--center">
+            Отзывы наших клиентов
+          </h2>
+          <div class="section__divider"></div>
+          <p class="section__subtitle section__subtitle--center">
+            Компания <span class="text-accent">«Ремонт окон»</span> работает на
+            рынке с 2007 года. Её образование стало результатом высокого спроса
+            на услуги по ремонту окон. Началось всё с обслуживания окон в
+            квартирах, а затем продолжилось на более крупных объектах.
+          </p>
+          <div class="testimonials__grid">
+            <div class="testimonials__item">
+              <div class="testimonial-card">
+                <img src="testimonial-1.png" alt="Отзыв 1" />
+              </div>
+            </div>
+            <div class="testimonials__item">
+              <div class="testimonial-card">
+                <img src="testimonial-2.png" alt="Отзыв 2" />
+              </div>
+            </div>
+            <div class="testimonials__item">
+              <div class="testimonial-card">
+                <img src="testimonial-3.png" alt="Отзыв 3" />
+              </div>
+            </div>
+            <div class="testimonials__item">
+              <div class="testimonial-card">
+                <img src="testimonial-4.png" alt="Отзыв 4" />
+              </div>
+            </div>
+            <div class="testimonials__item">
+              <div class="testimonial-card">
+                <img src="testimonial-5.png" alt="Отзыв 5" />
+              </div>
+            </div>
+            <div class="testimonials__item">
+              <div class="testimonial-card">
+                <img src="testimonial-6.png" alt="Отзыв 6" />
+              </div>
+            </div>
+            <div class="testimonials__item">
+              <div class="testimonial-card">
+                <img src="testimonial-7.png" alt="Отзыв 7" />
+              </div>
+            </div>
+            <div class="testimonials__item">
+              <div class="testimonial-card">
+                <img src="testimonial-8.png" alt="Отзыв 8" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--accent">
+        <div class="container contact">
+          <div class="contact__info">
+            <h2 class="section__title section__title--on-dark">
+              Оставьте заявку на ремонт окон
+            </h2>
+            <div class="section__divider section__divider--left"></div>
+            <p class="section__subtitle section__subtitle--on-dark">
+              Оставьте контакты — и мастер свяжется с вами, чтобы уточнить
+              детали ремонта окон и договориться о времени выезда.
+            </p>
+            <ul class="contact__list">
+              <li>
+                Телефоны:
+                <a class="phone-link phone-link--light" href="tel:+375447408010">
+                  <strong>+375 (44) 740‑80‑10</strong>
+                </a>,
+                <a class="phone-link phone-link--light" href="tel:+375447407010">
+                  <strong>+375 (44) 740‑70‑10</strong>
+                </a>
+              </li>
+              <li>
+                Дополнительно:
+                <a class="phone-link phone-link--light" href="tel:+375257406010">
+                  <strong>+375 (25) 740‑60‑10</strong>
+                </a>
+              </li>
+              <li>
+                E‑mail:
+                <a
+                  class="phone-link phone-link--light"
+                  href="mailto:remont.okna@bk.ru"
+                >
+                  <strong>remont.okna@bk.ru</strong>
+                </a>
+              </li>
+              <li>
+                Города:
+                <strong>Жодино</strong>, <strong>Смолевичи</strong>,
+                <strong>Жодинский</strong> и <strong>Смолевичский</strong> районы
+              </li>
+              <li>
+                График работы:
+                <strong>Пн–Вс, 9:00–21:00</strong>
+              </li>
+            </ul>
+          </div>
+          <form class="form" action="#" method="post">
+            <div class="form__field">
+              <label for="name">Имя</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ваше имя"
+              />
+            </div>
+            <div class="form__field">
+              <label for="phone">Телефон</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+375 (__) ___‑__‑__"
+              />
+            </div>
+            <div class="form__field">
+              <label for="comment">Комментарий</label>
+              <textarea
+                id="comment"
+                name="comment"
+                rows="3"
+                placeholder="Кратко опишите задачу"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Отправить заявку
+            </button>
+            <p class="form__note">
+              Нажимая на кнопку, вы подтверждаете согласие с политикой
+              конфиденциальности.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="logo logo--small">РЕМОНТ ОКОН</div>
+        </div>
+        <div class="footer__right">
+          <a href="#hero" class="footer__link">Вверх страницы</a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="tel:+375447408010"
+      class="call-floating"
+      aria-label="Позвонить мастеру по ремонту окон"
+    ></a>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("nav--open");
+        burger.classList.toggle("burger--open");
+      });
+    </script>
+  </body>
+</html>
+
