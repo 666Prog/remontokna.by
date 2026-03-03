@@ -896,15 +896,23 @@ textarea {
 
   .hero__inner {
     grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
   }
 
+  /* На мобильных сначала текст, потом фото */
   .hero__media {
-    order: -1;
+    order: 1;
   }
 
   .hero__image-placeholder {
-    min-height: 180px;
-    padding: 18px;
+    min-height: 0;
+    padding: 0;
+    box-shadow: 0 12px 30px rgba(12, 22, 60, 0.25);
+  }
+
+  .hero-photo {
+    height: auto;
+    max-height: 260px;
   }
 
   .hero__title {
@@ -923,8 +931,22 @@ textarea {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  /* На мобильных: сначала услуги (текст), потом фото */
+  .services-layout__right {
+    margin-top: 16px;
+  }
+
   .split__row {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* На мобильных: сначала текст блока, потом фото */
+  .split__content {
+    order: 1;
+  }
+
+  .split__image {
+    order: 2;
   }
 
   .benefits-icons {
