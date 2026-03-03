@@ -577,14 +577,69 @@ textarea {
 }
 
 .contact {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 28px;
-  align-items: flex-start;
+  display: block;
+  max-width: 520px;
 }
 
 .contact__info {
-  max-width: 480px;
+  max-width: none;
+}
+
+.contact__messengers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.messenger-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.messenger-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.messenger-btn svg {
+  flex-shrink: 0;
+}
+
+.messenger-btn--tg {
+  background: linear-gradient(135deg, #0088cc 0%, #00aaff 100%);
+  box-shadow: 0 4px 14px rgba(0, 136, 204, 0.4);
+}
+
+.messenger-btn--tg:hover {
+  box-shadow: 0 6px 20px rgba(0, 136, 204, 0.5);
+}
+
+.messenger-btn--viber {
+  background: linear-gradient(135deg, #7360f2 0%, #8b7af5 100%);
+  box-shadow: 0 4px 14px rgba(115, 96, 242, 0.4);
+}
+
+.messenger-btn--viber:hover {
+  box-shadow: 0 6px 20px rgba(115, 96, 242, 0.5);
+}
+
+.messenger-btn--ig {
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  box-shadow: 0 4px 14px rgba(220, 39, 67, 0.4);
+}
+
+.messenger-btn--ig:hover {
+  box-shadow: 0 6px 20px rgba(220, 39, 67, 0.5);
 }
 
 .contact__list {
@@ -840,9 +895,6 @@ textarea {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .contact {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  }
 }
 
 @media (max-width: 720px) {
@@ -957,10 +1009,6 @@ textarea {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .contact {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
   .footer__inner {
     flex-direction: column;
     align-items: flex-start;
@@ -968,6 +1016,33 @@ textarea {
 
   .call-floating {
     display: flex;
+  }
+
+  /* Секция контактов и кнопки мессенджеров на мобильных */
+  .contact {
+    max-width: none;
+  }
+
+  .contact__list {
+    font-size: 15px;
+  }
+
+  .contact__messengers {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .messenger-btn {
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 16px;
+    min-height: 52px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .messenger-btn:active {
+    transform: scale(0.98);
   }
 }
 
@@ -988,6 +1063,21 @@ textarea {
 
   .testimonials__grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact__messengers {
+    margin-top: 20px;
+    gap: 8px;
+  }
+
+  .messenger-btn {
+    padding: 12px 16px;
+    min-height: 48px;
+    font-size: 15px;
+  }
+
+  .section__title--on-dark {
+    font-size: 22px;
   }
 }
 
